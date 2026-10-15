@@ -1,39 +1,18 @@
-# 🏷️ Portfólio Profissional — Eli Dias 👨‍💻
+# Portfólio Profissional — Eli Dias 
 
 > [!NOTE]
 > Site de portfólio pessoal com trajetória, projetos, experiências e contato, em português e inglês.
 > Laboratório 01 da disciplina **Desenvolvimento e Integração de Aplicações Web (DIAW)** — Engenharia de Software, PUC Minas.
 
-![Versão](https://img.shields.io/badge/Versão-v0.1.0-blue?style=for-the-badge) ![React](https://img.shields.io/badge/React-19-007ec6?style=for-the-badge&logo=react&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-8-007ec6?style=for-the-badge&logo=vite&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-4-007ec6?style=for-the-badge&logo=tailwindcss&logoColor=white)
+**Site publicado:** [elidias.dev](https://elidias.dev)
 
----
-
-## 📚 Índice
-- [Links Úteis](#-links-úteis)
-- [Sobre o Projeto](#-sobre-o-projeto)
-- [Funcionalidades Principais](#-funcionalidades-principais)
-- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- [Arquitetura](#-arquitetura)
-- [Protótipos](#-protótipos)
-- [Instalação e Execução](#-instalação-e-execução)
-- [Deploy](#-deploy)
-- [Estrutura de Pastas](#-estrutura-de-pastas)
-- [Demonstração](#-demonstração)
-- [Autor](#-autor)
-
----
-
-## 🔗 Links Úteis
-* 🌐 **Demo Online:** _em breve (Vercel)_ <!-- TODO: colar link da Vercel -->
-
----
 
 ## 📝 Sobre o Projeto
 Website de portfólio profissional para apresentar minha formação, projetos e experiências de forma moderna e acessível, e permitir que recrutadores e colegas entrem em contato direto pelo site.
 
 ---
 
-## ✨ Funcionalidades Principais
+## Funcionalidades Principais
 - 👤 **Sobre Mim:** apresentação com formação, área de atuação, interesses e objetivos.
 - 🌐 **Internacionalização (i18n):** botão PT/EN, com o idioma salvo no navegador.
 - 🧭 **Especialidades:** abas de Salesforce e Java + Spring Boot com o que eu faço, diagrama de arquitetura, trilha de certificações e a stack completa com logos.
@@ -49,9 +28,9 @@ Website de portfólio profissional para apresentar minha formação, projetos e 
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
-### 💻 Front-end
+### Front-end
 * **Biblioteca:** React 19
 * **Linguagem:** JavaScript (ES2022+)
 * **Estilização:** Tailwind CSS 4
@@ -61,7 +40,7 @@ Website de portfólio profissional para apresentar minha formação, projetos e 
 ### 🖥️ Back-end
 * **Função serverless (Vercel):** `api/wakatime.js` em Node.js. Guarda a chave do WakaTime no servidor e devolve só os dados públicos, com cache de 1 h na CDN.
 
-### 📦 Dependências
+###  Dependências
 | Pacote | Uso |
 | :--- | :--- |
 | `react`, `react-dom` | Interface |
@@ -75,7 +54,7 @@ Website de portfólio profissional para apresentar minha formação, projetos e 
 
 ---
 
-## 🏗 Arquitetura
+## Arquitetura
 SPA (Single Page Application) estática, página única com rolagem e navegação por âncoras.
 
 ```
@@ -97,25 +76,15 @@ Navegador ──► Vercel (HTML/CSS/JS estáticos)
 - **Temas**: os componentes usam a escala `zinc-*` do Tailwind; cada tema redefine essa escala em `index.css` (`[data-theme=...]`), então nenhum componente precisa conhecer o tema ativo.
 - **`vite.config.js`**: um plugin faz `/api/wakatime` funcionar também no `npm run dev`.
 
----
 
-## 🎨 Protótipos
-Wireframes de média fidelidade feitos no Figma.
 
-<!-- TODO: exportar do Figma para docs/prototipos/ -->
-| Desktop | Mobile |
-| :---: | :---: |
-| ![Desktop](docs/prototipos/desktop.png) | ![Mobile](docs/prototipos/mobile.png) |
-
----
-
-## 🔧 Instalação e Execução
+## Instalação e Execução
 
 ### Pré-requisitos
 * **Node.js** v20 ou superior
 * **npm**
 
-### 🔑 Variáveis de Ambiente
+### Variáveis de Ambiente
 Copie `.env.example` para `.env` e preencha com os dados do painel do [EmailJS](https://dashboard.emailjs.com):
 
 | Variável | Descrição |
@@ -125,7 +94,7 @@ Copie `.env.example` para `.env` e preencha com os dados do painel do [EmailJS](
 | `VITE_EMAILJS_PUBLIC_KEY` | Chave pública da conta |
 | `WAKATIME_API_KEY` | Chave secreta do [WakaTime](https://wakatime.com/settings/api-key). Usada só em `api/wakatime.js`, nunca vai para o navegador |
 
-### ⚡ Como Executar
+### Como Executar
 ```bash
 git clone https://github.com/elijuniordd/portfolio.git
 cd portfolio
@@ -134,27 +103,14 @@ cp .env.example .env   # e preencha
 npm run dev            # http://localhost:5173
 ```
 
-Gerar o currículo (HTML + PDF em `public/curriculo/`) depois de editar `src/data/`:
-```bash
-npm run curriculo   # precisa do Google Chrome instalado (ou CHROME_PATH)
-```
-
 Build de produção:
 ```bash
 npm run build
 npm run preview
 ```
 
----
 
-## 🚀 Deploy
-1. Importar o repositório em [vercel.com/new](https://vercel.com/new) (framework detectado: Vite).
-2. Em *Settings → Environment Variables*, cadastrar as três variáveis `VITE_EMAILJS_*` e a `WAKATIME_API_KEY`.
-3. Cada `git push` na `main` gera um novo deploy; outras branches geram *Preview*.
-
----
-
-## 📂 Estrutura de Pastas
+## Estrutura de Pastas
 ```
 portfolio/
 ├── api/
@@ -183,17 +139,5 @@ portfolio/
 └── vite.config.js
 ```
 
----
-
-## 🎥 Demonstração
-<!-- TODO: prints/GIF do site rodando -->
-
----
-
-## 📜 Créditos
-- Escudo do Cruzeiro Esporte Clube: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Cruzeiro_Esporte_Clube_(logo).svg), domínio público. Marca registrada do Cruzeiro Esporte Clube, usada aqui apenas como homenagem de torcedor.
-
----
-
-## 👥 Autor
+## Autor
 **Eli Dias** — Engenharia de Software, PUC Minas

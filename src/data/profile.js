@@ -2,7 +2,7 @@ const profile = {
   name: 'Eli Dias',
   fullName: 'Eli Júnior Domingos Dias',
   location: { pt: 'Belo Horizonte, MG, Brasil', en: 'Belo Horizonte, MG, Brazil' },
-  site: null, // TODO: link da Vercel depois do deploy (aparece no currículo)
+  site: 'https://elidias.dev',
   photo: '/foto.jpg',
   email: 'elijuniordias098@gmail.com',
   whatsapp: '5534997766769', // DDI + DDD + número, só dígitos

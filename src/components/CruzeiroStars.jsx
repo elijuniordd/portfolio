@@ -1,10 +1,10 @@
 // Constelação do Cruzeiro do Sul (5 estrelas), como no uniforme do Cruzeiro.
 const STARS = [
-  { x: 50, y: 10, r: 9 }, // Gacrux (topo)
-  { x: 20, y: 44, r: 8 }, // Mimosa (esquerda)
-  { x: 80, y: 40, r: 7 }, // Delta Crucis (direita)
-  { x: 66, y: 64, r: 4.5 }, // Epsilon Crucis (a pequena)
-  { x: 50, y: 90, r: 9 }, // Acrux (base)
+  { x: 50, y: 10, r: 9 }, 
+  { x: 20, y: 44, r: 8 }, 
+  { x: 80, y: 40, r: 7 }, 
+  { x: 66, y: 64, r: 4.5 }, 
+  { x: 50, y: 90, r: 9 }, 
 ]
 
 function starPath({ x, y, r }) {
