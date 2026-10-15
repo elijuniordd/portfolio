@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#312e81"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#night)"/>
+
+  <!-- estrelas e lua -->
+  <g fill="#fff">
+    <circle cx="40" cy="100" r="1.5"/><circle cx="300" cy="40" r="1.2"/><circle cx="340" cy="110" r="1.5"/>
+    <circle cx="80" cy="200" r="1"/><circle cx="250" cy="90" r="1"/>
+    <circle cx="296" cy="168" r="1.5"><animate attributeName="opacity" values="1;0.2;1" dur="3s" repeatCount="indefinite"/></circle>
+  </g>
+  <circle cx="300" cy="78" r="22" fill="#fef3c7"/>
+  <circle cx="310" cy="72" r="20" fill="#1e1b4b"/>
+
+  <!-- prédio do hotel -->
+  <rect x="60" y="120" width="190" height="240" rx="6" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <rect x="96" y="96" width="118" height="30" rx="6" fill="#0f172a" stroke="#f472b6" stroke-width="2"/>
+  <text x="155" y="117" fill="#f9a8d4" font-size="15" font-weight="800" text-anchor="middle" letter-spacing="3">HOTEL
+    <animate attributeName="opacity" values="1;1;0.4;1;1" keyTimes="0;0.6;0.65;0.7;1" dur="4s" repeatCount="indefinite"/>
+  </text>
+  <g fill="#334155">
+    <rect x="80" y="145" width="26" height="22" rx="3"/><rect x="142" y="145" width="26" height="22" rx="3" fill="#fde68a"/><rect x="204" y="145" width="26" height="22" rx="3"/>
+    <rect x="80" y="185" width="26" height="22" rx="3" fill="#fde68a"/><rect x="142" y="185" width="26" height="22" rx="3"/><rect x="204" y="185" width="26" height="22" rx="3" fill="#fde68a"/>
+    <rect x="80" y="225" width="26" height="22" rx="3"/><rect x="204" y="225" width="26" height="22" rx="3"/>
+    <rect x="142" y="225" width="26" height="22" rx="3">
+      <animate attributeName="fill" values="#334155;#334155;#fde68a;#fde68a" keyTimes="0;0.3;0.32;1" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="80" y="265" width="26" height="22" rx="3">
+      <animate attributeName="fill" values="#fde68a;#fde68a;#334155;#334155" keyTimes="0;0.6;0.62;1" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="204" y="265" width="26" height="22" rx="3" fill="#fde68a"/>
+  </g>
+  <rect x="130" y="300" width="50" height="60" rx="4" fill="#0f172a" stroke="#475569"/>
+
+  <!-- card de reserva -->
+  <g transform="translate(330 70)">
+    <rect width="270" height="210" rx="16" fill="#fff"/>
+    <circle cx="30" cy="32" r="12" fill="#22c55e"/>
+    <path d="M24 32 L29 37 L37 27" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="52" y="37" fill="#0f172a" font-size="15" font-weight="700">Reserva confirmada</text>
+    <text x="20" y="70" fill="#64748b" font-size="11">Quarto Duplo · 3 noites</text>
+    <g transform="translate(20 82)">
+      <rect width="104" height="44" rx="8" fill="#f1f5f9"/>
+      <text x="12" y="18" fill="#64748b" font-size="10">Check-in</text>
+      <text x="12" y="35" fill="#0f172a" font-size="13" font-weight="700">12 out</text>
+      <rect x="126" width="104" height="44" rx="8" fill="#f1f5f9"/>
+      <text x="138" y="18" fill="#64748b" font-size="10">Check-out</text>
+      <text x="138" y="35" fill="#0f172a" font-size="13" font-weight="700">15 out</text>
+    </g>
+    <text x="20" y="150" fill="#64748b" font-size="11">Pagamento</text>
+    <g font-size="10.5" font-weight="700" text-anchor="middle">
+      <rect x="20" y="160" width="50" height="26" rx="13" fill="#4f46e5"/><text x="45" y="177" fill="#fff">PIX</text>
+      <rect x="76" y="160" width="62" height="26" rx="13" fill="#e2e8f0"/><text x="107" y="177" fill="#475569">Crédito</text>
+      <rect x="144" y="160" width="56" height="26" rx="13" fill="#e2e8f0"/><text x="172" y="177" fill="#475569">Débito</text>
+      <rect x="206" y="160" width="46" height="26" rx="13" fill="#e2e8f0"/><text x="229" y="177" fill="#475569">R$</text>
+    </g>
+  </g>
+
+  <!-- notificação -->
+  <g transform="translate(390 292)" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.35;0.45;0.9;1" dur="6s" repeatCount="indefinite"/>
+    <rect width="210" height="40" rx="20" fill="#22c55e"/>
+    <path d="M22 13 a7 7 0 0 1 14 0 v7 l3 4 h-20 l3 -4 Z M26 26 a3 3 0 0 0 6 0" fill="#fff"/>
+    <text x="48" y="25" fill="#fff" font-size="11.5" font-weight="700">Notificação via WhatsApp</text>
+  </g>
+
+  <text x="28" y="46" fill="#fff" font-size="22" font-weight="800">TP Hospedagem</text>
+  <text x="28" y="68" fill="#a5b4fc" font-size="13">Reservas · Spring Boot + React</text>
+</svg>

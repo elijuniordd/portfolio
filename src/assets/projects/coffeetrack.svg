@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fde68a"/>
+      <stop offset="1" stop-color="#fed7aa"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#sky)"/>
+
+  <!-- sol nascendo -->
+  <circle cx="120" cy="150" r="46" fill="#fbbf24" opacity="0.9">
+    <animate attributeName="cy" values="160;140;160" dur="8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- montanhas de Minas -->
+  <path d="M0 220 L90 150 L170 200 L260 120 L350 190 L430 140 L520 200 L640 150 L640 360 L0 360 Z" fill="#84cc16" opacity="0.55"/>
+  <path d="M0 260 L110 190 L210 240 L300 180 L400 250 L500 200 L640 240 L640 360 L0 360 Z" fill="#4d7c0f"/>
+  <path d="M0 300 L140 250 L260 290 L380 255 L520 295 L640 270 L640 360 L0 360 Z" fill="#365314"/>
+
+  <!-- linha de 1000 m -->
+  <line x1="0" y1="185" x2="360" y2="185" stroke="#7c2d12" stroke-width="2" stroke-dasharray="8 6" opacity="0.7"/>
+  <rect x="14" y="166" width="62" height="20" rx="4" fill="#7c2d12"/>
+  <text x="45" y="180" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">1000 m</text>
+
+  <!-- pés de café com frutos -->
+  <g fill="#14532d">
+    <ellipse cx="60" cy="318" rx="22" ry="16"/><ellipse cx="130" cy="312" rx="22" ry="16"/>
+    <ellipse cx="200" cy="320" rx="22" ry="16"/><ellipse cx="270" cy="314" rx="22" ry="16"/>
+  </g>
+  <g fill="#dc2626">
+    <circle cx="54" cy="314" r="3.5"/><circle cx="66" cy="320" r="3.5"/><circle cx="124" cy="308" r="3.5"/>
+    <circle cx="136" cy="316" r="3.5"/><circle cx="196" cy="316" r="3.5"/><circle cx="206" cy="324" r="3.5"/>
+    <circle cx="264" cy="310" r="3.5"/><circle cx="276" cy="318" r="3.5"/>
+  </g>
+
+  <!-- card do lote -->
+  <g transform="translate(372 52)">
+    <rect width="238" height="232" rx="16" fill="#fff" stroke="#e7e5e4"/>
+    <!-- nuvem salesforce -->
+    <g transform="translate(18 18)" fill="#00a1e0">
+      <circle cx="12" cy="14" r="9"/><circle cx="24" cy="9" r="10"/><circle cx="37" cy="13" r="9"/>
+      <rect x="6" y="12" width="36" height="12" rx="6"/>
+    </g>
+    <text x="70" y="38" fill="#032d60" font-size="15" font-weight="700">CoffeeTrack</text>
+    <text x="18" y="74" fill="#78716c" font-size="11">Lote de Café #042</text>
+    <text x="18" y="94" fill="#1c1917" font-size="14" font-weight="700">Fazenda Serra Azul</text>
+    <text x="18" y="111" fill="#78716c" font-size="11">Sul de Minas · 1.180 m</text>
+
+    <g font-size="10.5" fill="#57534e">
+      <text x="18" y="138">Corpo</text><text x="18" y="156">Acidez</text><text x="18" y="174">Doçura</text>
+    </g>
+    <g fill="#e7e5e4"><rect x="66" y="130" width="150" height="8" rx="4"/><rect x="66" y="148" width="150" height="8" rx="4"/><rect x="66" y="166" width="150" height="8" rx="4"/></g>
+    <g fill="#92400e">
+      <rect x="66" y="130" width="0" height="8" rx="4"><animate attributeName="width" values="0;130;130" keyTimes="0;0.2;1" dur="5s" repeatCount="indefinite"/></rect>
+      <rect x="66" y="148" width="0" height="8" rx="4"><animate attributeName="width" values="0;0;124;124" keyTimes="0;0.1;0.3;1" dur="5s" repeatCount="indefinite"/></rect>
+      <rect x="66" y="166" width="0" height="8" rx="4"><animate attributeName="width" values="0;0;135;135" keyTimes="0;0.2;0.4;1" dur="5s" repeatCount="indefinite"/></rect>
+    </g>
+
+    <text x="18" y="206" fill="#78716c" font-size="11">Nota SCA</text>
+    <text x="80" y="208" fill="#1c1917" font-size="20" font-weight="800">86</text>
+    <g transform="translate(116 190)">
+      <rect width="106" height="26" rx="13" fill="#16a34a">
+        <animate attributeName="opacity" values="0.75;1;0.75" dur="2s" repeatCount="indefinite"/>
+      </rect>
+      <text x="53" y="17" fill="#fff" font-size="10.5" font-weight="700" text-anchor="middle">Café Especial</text>
+    </g>
+  </g>
+
+  <!-- título -->
+  <text x="28" y="46" fill="#451a03" font-size="22" font-weight="800">CoffeeTrack Minas</text>
+  <text x="28" y="68" fill="#78350f" font-size="13">Rastreabilidade de cafés especiais</text>
+</svg>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eli Júnior Domingos Dias — Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { background: #e4e4e7; }
+  body {
+    width: 210mm; min-height: 297mm; margin: 0 auto; padding: 11mm 14mm;
+    background: #fff; color: #27272a;
+    font: 9.1pt/1.4 Inter, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  a { color: inherit; text-decoration: none; }
+  header { border-bottom: 2px solid #14285a; padding-bottom: 8pt; margin-bottom: 4pt; }
+  h1 { font-size: 22pt; line-height: 1.1; color: #14285a; letter-spacing: -0.02em; }
+  .title { font-size: 11pt; font-weight: 500; color: #2f529e; margin-top: 3pt; }
+  .contacts { margin-top: 6pt; font-size: 8.6pt; color: #52525b; display: flex; flex-wrap: wrap; row-gap: 2pt; }
+  .contacts span { white-space: nowrap; }
+  .contacts span:not(:last-child)::after { content: "·"; margin: 0 6pt; color: #a1a1aa; }
+  h2 {
+    font-size: 9pt; text-transform: uppercase; letter-spacing: 0.12em; color: #14285a;
+    border-bottom: 1px solid #e4e4e7; padding-bottom: 2pt; margin: 9pt 0 5pt;
+  }
+  .item { margin-bottom: 5pt; break-inside: avoid; }
+  .row { display: flex; justify-content: space-between; gap: 12pt; }
+  .row strong { color: #18181b; font-weight: 600; }
+  .muted { color: #71717a; }
+  .period { color: #71717a; font-size: 8.6pt; white-space: nowrap; }
+  ul { padding-left: 12pt; margin-top: 2pt; }
+  li { margin-bottom: 1pt; }
+  .tags { color: #2f529e; font-size: 8.4pt; margin-top: 1pt; }
+  .cols { display: grid; grid-template-columns: 1fr 56mm; gap: 0 8mm; }
+  aside strong, main strong { color: #18181b; font-weight: 600; }
+  aside .item { margin-bottom: 4pt; }
+  aside { font-size: 8.6pt; }
+  @media screen and (max-width: 700px) { body { width: 100%; min-height: 0; padding: 20px; } .cols { grid-template-columns: 1fr; } }
+  @media print { html { background: none; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Eli Júnior Domingos Dias</h1>
+  <p class="title">Salesforce Developer · Software Engineering Student</p>
+  <p class="contacts"><span>Belo Horizonte, MG, Brazil</span><span><a href="mailto:elijuniordias098@gmail.com">elijuniordias098@gmail.com</a></span><span><a href="https://wa.me/5534997766769">+55 34 99776-6769</a></span><span><a href="https://www.linkedin.com/in/elijddias">linkedin.com/in/elijddias</a></span><span><a href="https://github.com/elijuniordd">github.com/elijuniordd</a></span></p>
+</header>
+
+<div class="cols">
+<main>
+<h2>Summary</h2>
+<p>Salesforce Developer at Framework Digital, working with Apex, SOQL, LWC and Flow on the product catalog of a large pharmacy retail client. Software Engineering student at PUC Minas, with previous experience in C#, ASP.NET and OutSystems and personal projects in Java/Spring Boot and React. Trailhead Ranger, working toward Salesforce certifications and international project opportunities.</p>
+
+<h2>Experience</h2>
+<div class="item">
+  <div class="row"><strong>Salesforce Developer (Intern)</strong><span class="period">Mar 2026 — present</span></div>
+  <p class="muted">Framework Digital</p>
+  <ul><li>Built features with Apex, SOQL, Lightning Web Components (LWC) and Flow on the Catalog/PIM team.</li><li>Maintained and evolved the product catalog (PIM) integrated with Salesforce for Drogaria Araujo, a pharmacy retail chain.</li><li>Took part in agile ceremonies and worked directly with the client.</li></ul>
+</div>
+<div class="item">
+  <div class="row"><strong>Software Developer</strong><span class="period">Nov 2025 — Mar 2026</span></div>
+  <p class="muted">Framework Digital</p>
+  <ul><li>Developed applications with C#, ASP.NET and OutSystems.</li></ul>
+</div>
+<div class="item">
+  <div class="row"><strong>Programming Teacher (Intern)</strong><span class="period">May 2023 — Nov 2023</span></div>
+  <p class="muted">Grupo da Solidariedade</p>
+  <ul><li>Taught programming logic and development fundamentals to young people in a social project.</li><li>Planned lessons and mentored students one-on-one.</li></ul>
+</div>
+
+<h2>Projects</h2>
+<div class="item">
+  <div class="row"><strong>CoffeeTrack Minas</strong><span class="period">2026</span></div>
+  <p>Salesforce ecosystem to track specialty coffee production in Minas Gerais: custom objects (Farm and Lot), a Flow that flags lots above 1000 m as specialty coffee candidates, and an LWC buyer portal filtered by SCA score.</p>
+  <p class="tags">Salesforce · Apex · LWC · Flow · Salesforce CLI · <a href="https://github.com/elijuniordd/CoffeeTrack">github.com/elijuniordd/CoffeeTrack</a></p>
+</div>
+<div class="item">
+  <div class="row"><strong>TP Hospedagem</strong><span class="period">2026</span></div>
+  <p>Lodging booking system built as a team for the Modular Programming course: Spring Boot back end with MySQL, React front end, notifications, booking cancellation and integrated payments.</p>
+  <p class="tags">Java · Spring Boot · MySQL · React · Docker · <a href="https://github.com/Programacao-Modular-PUC/trabalho-pratico-tphospedagem">github.com/Programacao-Modular-PUC/trabalho-pratico-tphospedagem</a></p>
+</div>
+<div class="item">
+  <div class="row"><strong>ClimaAPI</strong><span class="period">2026</span></div>
+  <p>Spring Boot REST API that fetches the weather forecast for a city using WeatherAPI. Built in a pair for the DIAW course.</p>
+  <p class="tags">Java · Spring Boot · Maven · REST · <a href="https://github.com/elijuniordd/ClimaAPI">github.com/elijuniordd/ClimaAPI</a></p>
+</div>
+<div class="item">
+  <div class="row"><strong>n8n Random Node</strong><span class="period">2025</span></div>
+  <p>Custom node for the n8n automation platform that generates truly random numbers through the Random.org API. Technical challenge for the Onfly internship program.</p>
+  <p class="tags">TypeScript · Node.js · n8n · Docker · PostgreSQL · <a href="https://github.com/elijuniordd/n8n-random-node-challenge">github.com/elijuniordd/n8n-random-node-challenge</a></p>
+</div>
+</main>
+
+<aside>
+  <h2>Education</h2>
+  <div class="item"><strong>PUC Minas</strong><p>Bachelor's in Software Engineering</p><p class="period">2025 – 2028</p></div>
+<div class="item"><strong>CEFET-MG</strong><p>Technical High School · Robotics and 3D Modeling</p><p class="period">2021 – 2023</p></div>
+
+  <h2>Skills</h2>
+  <div class="item"><strong>Salesforce</strong><p>Apex, SOQL, Lightning Web Components, Flow, Salesforce CLI</p></div>
+<div class="item"><strong>Languages</strong><p>Java, C#, JavaScript, TypeScript, SQL</p></div>
+<div class="item"><strong>Frameworks</strong><p>Spring Boot (Web, Data JPA, Validation), React, ASP.NET, Node.js, OutSystems</p></div>
+<div class="item"><strong>Tools</strong><p>Git, Docker, MySQL, PostgreSQL, Vite, Scrum</p></div>
+
+  <h2>Certifications</h2>
+  <div class="item"><strong>Trailhead Ranger</strong><p class="muted">Salesforce Trailhead · 2026</p></div>
+<div class="item"><strong>Laboratório de Comunicação — LIM</strong><p class="muted">PUC Minas · 2025</p></div>
+<div class="item"><strong>Algoritmos e POO com Swift (HackaTruck, 50h)</strong><p class="muted">Instituto de Pesquisas ELDORADO · 2025</p></div>
+<div class="item"><strong>Fundamentos do ChatGPT</strong><p class="muted">Santander Open Academy · 2025</p></div>
+
+  <h2>Languages</h2>
+  <div><strong>Portuguese</strong> <span class="muted">· Native</span></div>
+<div><strong>English</strong> <span class="muted">· Intermediate</span></div>
+</aside>
+</div>
+</body>
+</html>
